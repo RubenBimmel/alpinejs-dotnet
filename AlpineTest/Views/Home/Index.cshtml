@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <div x-data="Alpine.component('dropdown')()" class="dropdown" x-bind:class="isOpen() ? 'open' : ''">
+        <button x-on:click="open">Open</button>
+
+        <div x-show="isOpen()" x-on:click.away="close">
+            <ul>
+                @for (var i = 0; i < 5; i++)
+                {
+                    <li>Dropdown content</li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>

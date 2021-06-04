@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlpineTest", "AlpineTest\AlpineTest.csproj", "{08C0B084-A9B2-4E28-894F-DA8CFBC64F40}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08C0B084-A9B2-4E28-894F-DA8CFBC64F40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08C0B084-A9B2-4E28-894F-DA8CFBC64F40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08C0B084-A9B2-4E28-894F-DA8CFBC64F40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08C0B084-A9B2-4E28-894F-DA8CFBC64F40}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,24 @@
+.dropdown {
+  max-width: 200px;
+  background-color: #ddd;
+  
+  button {
+    width: 100%;
+    border: none;
+    
+    &:after {
+      content: 'V';
+      float: right;
+      transition: transform .2s ease-out;
+    }
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  &.open button:after {
+    transform: rotate(180deg);
+  }
+}
