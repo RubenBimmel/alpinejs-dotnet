@@ -1,2 +1,6 @@
 @import 'components/dropdown/dropdown';
 @import 'components/footer';
+
+[x-cloak] {
+  display: none !important;
+}
