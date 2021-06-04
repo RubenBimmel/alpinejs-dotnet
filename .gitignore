@@ -209,38 +209,8 @@ FakesAssemblies/
 # Visual Studio 6 workspace options file
 *.opt
 
-# LightSwitch generated files
-GeneratedArtifacts/
-_Pvt_Extensions/
-ModelManifest.xml
-/src/Nedwin.Casino/wwwroot
-/tools/AppVeyorDeployConsole/start.bat
-
 # Webstorm/intellij stuff
 .idea/
 
 # Compiled static files
-src/Nedwin.Portal/wwwroot/statics/
-src/Nedwin.Portal/wwwroot/portal-site/
-src/Nedwin.Portal.Header/wwwroot/statics/
-src/Nedwin.Portal.Header/Statics/src/icons/compressed/
-_references.js
-
-# Lock file..
-project.lock.json
-Nedwin.Portal.xproj.user
-/src/Nedwin.Portal.Cms/wwwroot/Statics
-run-portal.sh
-
-
-#Integration test files
-selenium-tests/testresult
-selenium-tests/screens
-src/.idea.Nedwin.Portal/
-
-src/Nedwin.Portal.Statics/coverage/
-
-#includes file
-includes.txt
-
-src/Nedwin.Portal.Cms/wwwroot/exports/
+AlpineTest/wwwroot/statics
