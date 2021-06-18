@@ -1,4 +1,4 @@
-export default abstract class AlpineComponent {
+abstract class AlpineComponent {
     /** Access a global store registered using Alpine.store(...) */
     $store!: any;
 
@@ -16,6 +16,10 @@ export default abstract class AlpineComponent {
 
     /** Wait until the next "tick" (browser paint) to run a bit of code */
     $nextTick!: (callback: (_: any) => void) => void;
-
-    [key: string]: any;
 }
+
+interface AlpineComponent {
+    init(): void;
+}
+
+export default AlpineComponent;
