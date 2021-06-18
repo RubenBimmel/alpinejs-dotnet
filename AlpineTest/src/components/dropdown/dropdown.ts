@@ -1,17 +1,34 @@
-import { AlpineComponent } from '@leanadmin/alpine-typescript';
+import { AlpineComponent, Component, Prop, Watch } from '../../alpine-class-component';
 
-export default class dropdown extends AlpineComponent {
-    public show = false;
+@Component
+export default class Dropdown extends AlpineComponent {
+    @Prop() readonly content: string;
+    @Prop() readonly count: number;
     
-    open() { 
-        this.show = true 
+    show = false;
+    
+    open() {
+        this.show = true
     }
     
-    close() { 
-        this.show = false 
+    close() {
+        this.show = false
     }
     
-    isOpen() { 
-        return this.show === true 
+    get isOpen() {
+        return this.show === true
+    }
+    
+    get countUp() {
+        return this.count + 1;
+    }
+    
+    init() {
+        console.log('INIT');
+    }
+    
+    @Watch('show')
+    onShowChange(value: boolean) {
+        console.log('show: ' + value);
     }
 }

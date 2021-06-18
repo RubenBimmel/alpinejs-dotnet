@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "dependencies": {
-    "alpinejs": "^2.8.2",
+    "alpinejs": "^3.0.6",
     "ts-loader": "^9.2.2"
   },
   "devDependencies": {
-    "@leanadmin/alpine-typescript": "^0.1.25",
     "css-loader": "^5.2.6",
     "sass": "^1.34.1",
     "sass-loader": "^12.0.0",

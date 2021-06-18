@@ -1,8 +1,9 @@
-import { component } from '@leanadmin/alpine-typescript';
 import './main.scss';
+
+import Alpine from 'alpinejs';
 
 import Dropdown from './components/dropdown/dropdown';
 
-component('dropdown', Dropdown);
+Alpine.data('dropdown', Dropdown);
 
-import 'alpinejs';
+Alpine.start();

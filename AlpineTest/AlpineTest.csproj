@@ -30,4 +30,11 @@
       <Content Remove="wwwroot\statics\**" />
     </ItemGroup>
 
+    <ItemGroup>
+      <TypeScriptCompile Include="src\alpine-class-component\alpine-component.ts" />
+      <TypeScriptCompile Include="src\alpine-class-component\component.ts" />
+      <TypeScriptCompile Include="src\alpine-class-component\prop.ts" />
+      <TypeScriptCompile Include="src\alpine-class-component\watch.ts" />
+    </ItemGroup>
+
 </Project>

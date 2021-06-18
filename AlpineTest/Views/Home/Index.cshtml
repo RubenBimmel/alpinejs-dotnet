@@ -4,14 +4,17 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <div x-data="Alpine.component('dropdown')()" class="dropdown" x-bind:class="isOpen() ? 'open' : ''">
+    <div x-data="dropdown" data-content="dropdown content" data-count="5" class="dropdown" x-bind:class="isOpen ? 'open' : ''">
         <button x-on:click="open">Open</button>
 
-        <div x-show="isOpen()" x-on:click.away="close" x-cloak>
+        <div x-show="isOpen" x-on:click.away="close" x-cloak>
             <ul>
                 @for (var i = 0; i < 5; i++)
                 {
-                    <li>Dropdown content</li>
+                    <li>
+                        <span x-text="content"></span>
+                        <span x-text="countUp"></span>
+                    </li>
                 }
             </ul>
         </div>
