@@ -1,8 +1,11 @@
-import { component } from '@leanadmin/alpine-typescript';
 import './main.scss';
 
+import { Alpine } from '@rubenbimmel/alpine-class-component';
+
 import Dropdown from './components/dropdown/dropdown';
+import Person from './components/person';
 
-component('dropdown', Dropdown);
+Alpine.data('dropdown', Dropdown);
+Alpine.data('person', Person);
 
-import 'alpinejs';
+Alpine.start();

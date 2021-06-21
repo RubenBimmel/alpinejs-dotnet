@@ -30,4 +30,8 @@
       <Content Remove="wwwroot\statics\**" />
     </ItemGroup>
 
+    <ItemGroup>
+      <TypeScriptCompile Include="src\components\person.ts" />
+    </ItemGroup>
+
 </Project>
