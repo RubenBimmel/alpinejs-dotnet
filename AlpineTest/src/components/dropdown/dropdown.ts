@@ -1,4 +1,4 @@
-import { AlpineComponent, Component, Prop, Ref, Watch } from '../../alpine-class-component';
+import { AlpineComponent, Component, Prop, Ref, Watch } from '@rubenbimmel/alpine-class-component';
 
 @Component
 export default class Dropdown extends AlpineComponent {

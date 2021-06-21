@@ -4,12 +4,13 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
+
     <div x-data="dropdown" data-content="dropdown content" data-count="5" class="dropdown" x-bind:class="isOpen ? 'open' : ''">
-        <button x-on:click="open">
+        <button x-on:click="open()">
             Open <span x-ref="label"></span>
         </button>
 
-        <div x-show="isOpen" x-on:click.away="close" x-cloak>
+        <div x-show="isOpen" x-on:click.away="close()" x-cloak>
             <ul>
                 @for (var i = 0; i < 5; i++)
                 {
@@ -20,5 +21,9 @@
                 }
             </ul>
         </div>
+    </div>
+    
+    <div x-data="person" data-first-name="'John'" data-last-name="'Doe'">
+        <span x-text="name"></span>
     </div>
 </div>
